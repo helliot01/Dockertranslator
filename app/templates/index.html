@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>BibTex to RIS Translator</title>
+    <style>
+    body {
+          display: flex;
+          flex-direction: column;
+          min-height: 85vh;
+        }
+        
+    .footer {
+          flex: 0 0 50px;
+          margin-top: auto;
+        }
+      .center {
+          text-align: center;
+          line-height: 2;
+        }
+      .center-body {
+        margin-left:auto;
+        margin-right:auto;
+        width:500px;
+        border:3px solid red;
+        padding: 30px;
+
+      }
+        .bottom {
+            position: absolute;
+            bottom: 10;
+        }
+
+    </style>
+  </head>
+
+  
+  <body class="center-body">
+      <p style="font-size:16px"> <b>BibTex to RIS Translator</b><br>
+            How to Use: <br>
+      1. Upload the .bib file you want translated<br>
+      2. Click Download to download the .ris version of your file<br><br>
+      <b>*Please note, there is a compatibility issue with Safari 14*</b>
+      </p>
+      <form method=post enctype=multipart/form-data>
+              <input type=file name=file onclick="TestsFunction()"><br>
+          <p id="TestsForm" style="display:none">
+                Thanks!<br>
+                <input type=submit value="Translate & Download"><br>
+                <br>
+                Test the .ris file on <a href="https://www.ncbi.nlm.nih.gov/myncbi/collections/mybibliography/">My Bibliography</a>
+          </p>
+      </form>
+
+      <p class="footer" style="font-size:16px">
+      If you have problems with or questions about this application, <br>
+      please contact and send your bib file to Engineering IT at:
+      <a href="mailto:enghelp@bu.edu">enghelp@bu.edu</a><br>
+      <a href="https://eng-gitlab.bu.edu/helliot/bibtoris">Gitlab for the Translator</a><br>
+      Developed by Harrison Elliot and James Goebel</p>
+  </body>
+</html>
